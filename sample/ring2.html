@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head><style>
+        *{
+            margin:0;
+            padding: 0;
+            
+        }
+    body{
+       
+    }
+        .circle{
+            position: relative;
+            width:600px;
+            height: 600px;
+            filter:url(#wavy) blur(1px)
+        }
+        .circle1{
+            position: relative;
+            width:100vh;
+            height: 100vh;
+            filter:url(#wav) blur(.5px)
+        }
+        svg{
+            width:0;
+            height: 0;
+        }
+        .circle:before{
+            content: '';
+            position: absolute;
+            top: 100px;
+            left:100px ;
+            right: 100px;
+            bottom: 100px;
+            border:20px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 50px #0f0,
+                inset 0 0 50px #0f0;
+            -webkit-box-reflect:below 10px linear-gradient(transparent,transparent,#0002);
+            animation:  animate 5s linear infinite;
+          
+        }
+        .circle1:before{
+            content: '';
+            position: absolute;
+             
+            top: 5%;
+            left:80% ;
+            right: 5%;
+            bottom: 80%;
+            border:1.5vh solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 50px #0f0,
+                inset 0 0 50px #0f0;
+            -webkit-box-reflect:below 10px linear-gradient(transparent,transparent,#0002);
+            animation:  animate 5s linear infinite;
+          
+        }
+        .circle:after{
+            content: '';
+            position: absolute;
+            top: 100px;
+            left:100px ;
+            right: 100px;
+            bottom: 100px;
+            border:20px solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #fff,
+                inset 0 0 20px #fff;
+            }
+        .circle:nth-child(2):before{
+            animation-delay:-2.5s;
+        }
+        .circle1:after{
+            content: '';
+            position: absolute;
+            
+            top: 5%;
+            left:80% ;
+            right: 5%;
+            bottom: 80%;
+            border:1.5vh solid #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #fff,
+                inset 0 0 20px #fff;}
+        .circle:nth-child(2):before{
+            animation-delay:-2.5s;
+        }
+        @keyframes animate{
+            0%{
+            box-shadow: 0 0 5% #0f0,
+                inset 0 0 5% #0f0;
+                filter: hue-rotate(0deg);
+        }
+        20%{
+            box-shadow: 0 0 6% #0f0,
+                inset 0 0 6% #0f0;
+                filter: hue-rotate(0deg);
+        }
+        40%{
+            box-shadow: 0 0 4% #0f0,
+                inset 0 0 4% #0f0;
+                filter: hue-rotate(0deg);
+        }
+        80%{
+            box-shadow: 0 0 8% #0f0,
+                inset 0 0 8% #0f0;
+                filter: hue-rotate(0deg);
+        }
+        60%{
+            box-shadow: 0 0 8% #0f0,
+                inset 0 0 8% #0f0;
+                filter: hue-rotate(0deg);
+        }
+       100%{
+            box-shadow: 0 0 4% #0f0,
+                inset 0 0 4% #0f0;
+                filter: hue-rotate(360deg);
+        }
+    }
+    .banner{
+    border: 2px solid white;
+    width: auto;
+    height: 70%;
+}
+section{
+  position: relative;
+  width:100%;
+  height: 100vh;
+  overflow: hidden;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .star{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none ;
+
+}
+section .star {
+  background:url(img1.jpg);
+}
+
+    </style></head>
+    <body>
+        <div class="banner">
+            <div class="circle"></div>
+            <div class="title">
+              <h1>I AM <span>YASH<span >VANTH</span></span></h1>
+              <h3> WEB DEVLOPER&nbsp;<span class="dot"></span>&nbsp;WEB DESIGNER&nbsp;<span class="dot"></span>&nbsp;GAME DEVLOPER</h3>
+            
+            </div>
+            <section>
+              
+                <div class="star star1"></div>
+                <div class="star star2"></div>
+                <div class="star star3"></div>
+                <div class="star star4"></div>
+                <div class="star star5"></div>
+                <div class="star star6"></div>
+                <div class="star star7"></div>
+                <div class="star star8"></div>
+              </section>
+            <svg>
+                <filter id="wavy">
+                    <feTurbulence x="0" y="0" baseFrequency="0.009" num Octaves="5" speed="2">
+                      <animate attributeName="baseFrequency" dur="60s" values="0.02;0.005;0.02" repeatCount="indefinite">
+                    </feTurbulence>
+                    
+                    <feDisplacementMap in="SourceGraphic" scale="30">
+                </filter>
+            </svg>
+            <svg>
+              <filter id="wav">
+                  <feTurbulence x="0" y="0" baseFrequency="0.00001  " num Octaves="3" speed="2">
+                    <animate attributeName="baseFrequency" dur="60s" values="0.002;0.0005;0.002" repeatCount="indefinite">
+                  </feTurbulence>
+                  
+                  <feDisplacementMap in="SourceGraphic" scale="30">
+              </filter>
+          </svg>
+        </div>
+     
+    </body>
+    </html>

@@ -1,0 +1,523 @@
+@import url('http://fonts.cdnfonts.com/css/audrey');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500&family=Roboto+Mono&display=swap');
+*{
+                
+    outline: none;
+    margin: 0;
+}
+body{
+  background: black;
+  font-family: 'overpass',sans-serif;
+}
+button{
+  color: black;
+  background: transparent;
+}
+.banner{
+    /* border: 2px solid white;*/
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+}
+.splide{
+  margin:2% 10%;
+  height: 70%;
+}
+.splide__slide{
+  color: azure; 
+  background-color: rgb(41, 41, 36);
+}
+
+.my-slider-progress {
+background: #ccc;
+
+}
+.splide__slide h2{
+  font-size: 2em;
+  text-decoration: underline;
+  text-align: center;
+  text-underline-offset: 3px;
+}
+
+.my-slider-progress-bar {
+background: #c307cf;
+height: 2px;
+transition: width 400ms ease;
+width: 0;
+}
+
+.chart {
+background: rgba(255, 255, 255, 0.1);
+justify-content: flex-start;
+border-radius: 100px;
+align-items: center;
+position: relative;
+padding: 0 5px;
+display: flex;
+
+}
+.chart{
+width: 80%;
+height: 10%;
+}
+.chart span {
+/* You can modify the value below to change the distance between the percentage number and the bar */
+margin-left: 5px;
+color: #fff;
+font-weight: bolder;
+
+}
+
+.bar {
+animation: load 5s normal forwards;
+box-shadow: 0 10px 40px -10px #fff;
+border-radius: 100px;
+background: #fff;
+height: 20px;
+width: 0;
+} 
+
+@keyframes load {
+0% {
+width: 0;
+}
+100% {
+/* You need to change the percentage below to match the value in the corresponding <span> */
+width: 90%;
+}
+}
+.bar1 {
+animation: load1 5s normal forwards;
+box-shadow: 0 10px 40px -10px #fff;
+border-radius: 100px;
+background: #fff;
+height: 20px;
+width: 0;
+} 
+
+@keyframes load1 {
+0% {
+width: 0;
+}
+100% {
+/* You need to change the percentage below to match the value in the corresponding <span> */
+width: 80%;
+}
+}
+
+h2{
+font-size:6vh;
+margin-top:0;
+}
+.bar2 {
+animation: load2 5s normal forwards;
+box-shadow: 0 10px 40px -10px #fff;
+border-radius: 100px;
+background: #fff;
+height: 20px;
+width: 0;
+} 
+
+@keyframes load2 {
+0% {
+width: 0;
+}
+100% {
+/* You need to change the percentage below to match the value in the corresponding <span> */
+width: 60%;
+}
+}
+
+.bar3 {
+animation: load3 5s normal forwards;
+box-shadow: 0 10px 40px -10px #fff;
+border-radius: 100px;
+background: #fff;
+height: 20px;
+width: 0;
+} 
+
+@keyframes load3 {
+0% {
+width: 0;
+}
+100% {
+/* You need to change the percentage below to match the value in the corresponding <span> */
+width: 50%;
+}
+}
+
+.row{
+/* border: 2px solid white;*/
+width: auto;
+height: 50%;
+margin:0 0 0 7%;
+}
+.col1{
+/*border: 2px solid white;*/
+width: 49%;
+height: 100%;
+float:left;
+}
+.col2{
+/* border: 2px solid white;*/
+width: 49%;
+height: 100%;
+float: right;
+}
+.detail_row{
+  margin:2%;
+}
+.detail_img{
+ /* border: 2px solid white;*/
+  width: 19%;
+  height: 100%;
+  float: left;
+  margin:2%;  
+  cursor: pointer;
+}
+.detail_img:hover{
+  opacity: 1.5;
+  image-rendering:pixelated;
+}
+
+.detail_me{
+  /*border: 2px solid white;*/
+  width: 70%;
+  height: 100%;
+  float: right;  
+  margin:2%;
+  font-size: 3vh;
+  text-align: justify;
+  margin-right: 3%;
+}
+/*Qualification*/
+#qualification{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin:0 5% ;
+}
+
+#qualification td, #qualification th {
+  border: 1px solid transparent;
+  padding: 8px;
+}
+
+#qualification tr:nth-child(even){color: white;border: 2px solid white;}
+#qualification tr:nth-child(odd){background-color: white;border: 2px solid white;}
+
+#qualification th {
+ margin: 5% ;
+  text-align: left;
+  background-color: white;
+  color:  #c307cf;
+  text-align: justify;
+
+}
+.pb{
+color:#ccc;
+font-size: 4vh;
+
+}
+.skills{
+margin:5%;
+}
+.fab,.fas{
+font-size:8vh;
+}
+.hoby{
+   /* border: 2px solid white;*/
+    width: 24%;   
+    float: left;
+    margin: 2% 0 0 0;
+}
+.hob{
+color: #ccc;
+position: relative;
+font-size: 4vh;
+
+}
+.hobbies{
+/*border: 2px solid white;*/
+background :rgb(41, 41, 36);
+text-align: center;
+height: 34%;
+width: auto;
+}
+.carousel-item h3{
+  color: #ccc;
+  margin: .3%;
+  text-align:center;
+}
+.carousel-item {
+  width:100%;
+  height:100%
+}
+.carousel{
+  border: 2px solid white;
+}
+.row1{
+  background:rgba(255, 255, 255, 0.1);
+  /* border: 2px solid white;*/
+  width: auto;
+  height: 90%;
+  margin:0 0 0 0;
+}
+form,.loaction{
+  width:45%;
+  height:80%;
+  /*border: 2px solid white; */
+  color:#ccc;
+  float: left;
+  margin: 1%;
+
+}
+input[type=email]{
+  color: #ccc;
+  margin: 3% 0;
+  
+}
+textarea{
+color: #ccc;
+resize: none;
+margin: 3% 0;
+}
+form button{
+  border:none;
+  background: gray;
+  width: 20%;
+  height: 7%;
+  border-radius: 6%;
+  cursor: pointer;
+}
+form button:hover{
+  background: #ccc;
+}
+
+.nkl,.city,.contact{
+  margin: 2%;
+}
+.social .fab{
+  color:#ccc;
+  font-size: 3vh;
+  margin:0 2%;
+}
+.fa-facebook-f:hover{
+  color: #3b5998;
+}
+.fa-instagram:hover{
+  color:#8a3ab9
+}
+.fa-twitter:hover{
+  color:#00acee;
+}
+.fa-github:hover{
+  color:#171515;
+  background: wheat;
+  border-radius: 45%;
+}
+
+
+.circle{
+  position: relative;
+  width: 100vh;
+  height: 100vh;
+  filter:url(#wavy) blur(1px);
+ /* border:2px solid white;*/
+}
+
+svg{
+  width:0;
+  height: 0;
+}
+.circle:before{
+  content: '';
+  position: absolute;
+  top: 100px;
+  left:100px ;
+  right: 100px;
+  bottom: 100px;
+  border:20px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 50px #c307cf,
+      inset 0 0 50px #c307cf;
+  
+  animation:  animate 5s linear infinite;
+
+}
+
+.circle:after{
+  content: '';
+  position: absolute;
+  top: 100px;
+  left:100px ;
+  right: 100px;
+  bottom: 100px;
+  border:20px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff,
+      inset 0 0 20px #fff;
+  }
+
+@keyframes animate{
+  0%{
+  box-shadow: 0 0 5% #c307cf,
+      inset 0 0 5% #c307cf,;
+      filter: hue-rotate(0deg);
+}
+20%{
+  box-shadow: 0 0 6% #c307cf,
+      inset 0 0 6% #c307cf;
+      filter: hue-rotate(0deg);
+}
+40%{
+  box-shadow: 0 0 4% #c307cf,
+      inset 0 0 4% #c307cf;
+      filter: hue-rotate(0deg);
+}
+80%{
+  box-shadow: 0 0 8% #c307cf,
+      inset 0 0 8% #c307cf;
+      filter: hue-rotate(0deg);
+}
+60%{
+  box-shadow: 0 0 8% #c307cf,
+      inset 0 0 8% #c307cf;
+      filter: hue-rotate(0deg);
+}
+100%{
+  box-shadow: 0 0 4% #c307cf,
+      inset 0 0 4% #c307cf;
+      filter: hue-rotate(360deg);
+}
+}
+.title{
+  float: right;
+  color:white;
+  width: 50%;
+  height: 100%;
+ /* border: 2px solid white;*/
+  
+}
+.title h1{
+  font-family: "overpass",sans-serif; 
+  font-size:  5em;
+  margin-top: 31%;
+  line-height: 1;
+  color: transparent;
+  background-image: linear-gradient(to left,#c307cf,#950740,#6f2232);
+  -webkit-background-clip: text;
+  -webkit-animation:colorchange 5s linear infinite;
+  -webkit-background-size:500%;
+  background-size: 500%;
+}
+
+
+@-webkit-keyframes colorchange {
+  0%{
+    background-position: 0 100%;
+  }
+  50%{
+    background-position: 100% 0%;
+  }
+  100%{
+    background-position: 0 100%;
+  }
+}
+.title h3{
+  font-size: 3vh;
+  padding-left: 10%;
+  margin: 2%;
+  
+}
+.dot {
+  height: 2vh;
+  width: 2vh;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+section{
+  position: relative;
+  width:100%;
+  height: 100vh;
+  overflow: hidden;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .star{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none ;
+  animation: str 8s ease-in-out infinite,
+              backgroundmove 16s linear infinite;
+ 
+
+}
+section  .star1{
+  animation-delay: 0s;
+  background:url(stars/star1.png);
+ 
+}
+section  .star2{
+  animation-delay: -1s;
+  background:url(stars/star2.png);
+ 
+}
+section  .star3{
+  animation-delay: -2s;
+  background:url(stars/star3.png);
+ 
+}
+section  .star4{
+  animation-delay: -3s;
+  background:url(stars/star4.png);
+ 
+}
+section  .star5{
+  animation-delay: -4s;
+  background:url(stars/star5.png);
+ 
+}
+section  .star6{
+  animation-delay: -5s;
+  background:url(stars/star6.png);
+ 
+}
+section  .star7{
+  animation-delay: -6s;
+  background:url(stars/star7.png);
+ 
+}
+section  .star8{
+  animation-delay: -7s;
+  background:url(stars/star8.png);
+ 
+}
+@keyframes str{
+  0%,20%,40%,60%,80%,100%{
+    opacity: 0;
+  }
+  10%,30%,50%,70%,90%{
+    opacity: 1;
+  }
+}
+@keyframes backgroundmove {
+  0%{
+    transform: scale(1);
+  }
+  100%{
+    transform: scale(2);
+  }
+}
+.project tr td {
+  /*border: 2px solid pink;*/
+ color: white;
+ 
+}
